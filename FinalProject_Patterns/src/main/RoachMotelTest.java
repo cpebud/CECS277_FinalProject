@@ -19,5 +19,9 @@ package main;
  */
 public class RoachMotelTest
 {
-    RoachMotel motel = RoachMotel.getInstance();
+    public static void main(String[] args)
+    {
+        RoachMotel motel = RoachMotel.getInstance();
+        System.out.println(motel);
+    }
 }
