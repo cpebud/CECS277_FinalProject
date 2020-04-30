@@ -20,9 +20,9 @@ import util.Reference;
  * @version 0.0.1
  * @since   04/29/20
  */
-public class ResistantShower extends MotelRoomDecorator
+public class Shower extends MotelRoomDecorator
 {
-    private static final int PRICE = Reference.AMENITY_PRICE_RESISTANTSHOWER;
+    private static final int PRICE = Reference.AMENITY_PRICE_SHOWER;
     protected MotelRoom room;
     
     /**
@@ -30,7 +30,7 @@ public class ResistantShower extends MotelRoomDecorator
      *
      * @param room the room
      */
-    public ResistantShower(MotelRoom room)
+    public Shower(MotelRoom room)
     {
         this.room = room;
     }
