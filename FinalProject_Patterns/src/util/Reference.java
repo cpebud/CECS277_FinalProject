@@ -28,5 +28,5 @@ public class Reference
     public static final int AMENITY_PRICE_FOODBAR         = 10;
     public static final int AMENITY_PRICE_SPA             = 20;
     public static final int AMENITY_PRICE_AUTOREFILL      = 5;
-    public static final int AMENITY_PRICE_RESISTANTSHOWER = 25;
+    public static final int AMENITY_PRICE_SHOWER = 25;
 }
