@@ -23,16 +23,37 @@ import util.Reference;
  */
 public class RoachMotel
 {
-    private static RoachMotel instance;
-    private int currentCapacity;
-    
     private static final int MAX_ROOMS = Reference.MOTEL_MAXROOMS;
-    private MotelRoom[] rooms = new MotelRoom[MAX_ROOMS];
+    private static RoachMotel instance;
     
+    private int currentCapacity = MAX_ROOMS;
+    private MotelRoom[] rooms = new MotelRoom[MAX_ROOMS];
+    private MotelRoomFactory factory = new MotelRoomFactory();
+    
+
     /**
      * Instantiates a new roach motel.
      */
     private RoachMotel() {}
+    
+    public boolean checkIn(RoachColony colony, String room, Iterable<String> amenities)
+    {
+        if(currentCapacity > 0)
+        {
+            for(MotelRoom m_room : rooms)
+            {
+                if(m_room == null)
+                {
+                    m_room = factory.createRoom(room, amenities);
+                    currentCapacity--;
+                    System.out.println(colony.getName() + " has checked in.");
+                    return true;
+                }
+            }
+        }
+        System.out.println("NO VACANCY");
+        return false;
+    }
     
     /**
      * Gets the single instance of RoachMotel.
