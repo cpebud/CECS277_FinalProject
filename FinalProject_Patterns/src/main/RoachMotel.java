@@ -12,6 +12,7 @@
  ******************************************************************************/
 package main;
 
+import main.payments.Payment;
 import main.rooms.MotelRoom;
 import util.Reference;
 
@@ -36,23 +37,57 @@ public class RoachMotel
      */
     private RoachMotel() {}
     
-    public boolean checkIn(RoachColony colony, String room, Iterable<String> amenities)
+    /**
+     * Check in.
+     *
+     * @param colony the colony
+     * @param roomType the room type
+     * @param amenities the amenities
+     * @return the motel room
+     */
+    public MotelRoom checkIn(RoachColony colony, String roomType, Iterable<String> amenities)
     {
         if(currentCapacity > 0)
         {
-            for(MotelRoom m_room : rooms)
+            for(MotelRoom room : rooms) 
             {
-                if(m_room == null)
+                if(room == null)
                 {
-                    m_room = factory.createRoom(room, amenities);
+                    room = factory.createRoom(roomType, amenities);
+                    colony.setRoom(room);
                     currentCapacity--;
                     System.out.println(colony.getName() + " has checked in.");
-                    return true;
+                    return room;
                 }
             }
         }
         System.out.println("NO VACANCY");
-        return false;
+        return null;
+    }
+    
+    /**
+     * Check out.
+     *
+     * @param room the room
+     * @param numDays the number of days
+     * @param payment the payment
+     * @return the double
+     */
+    public double checkOut(MotelRoom room, int numDays, Payment payment)
+    {
+        double cost = room.costTotal(numDays);
+        
+        for(MotelRoom m_room : rooms)
+        {
+            if(m_room.equals(room))
+            {
+                payment.pay(cost);
+                m_room = null;
+                currentCapacity++;
+                return cost;
+            }
+        }
+        return 0;
     }
     
     /**
@@ -74,6 +109,16 @@ public class RoachMotel
      */
     public String toString()
     {
-        return String.format("%s", this.getClass().getSimpleName().toUpperCase());
+        String availRooms = "[ ";
+        for(int i = 0; i < MAX_ROOMS; i++)
+        {
+            if(rooms[i] == null)
+            {
+                int roomNum = 100 + i;
+                availRooms += roomNum + " ";
+            }
+        }
+        availRooms += "]";
+        return String.format("%s %s", this.getClass().getSimpleName().toUpperCase(), availRooms);
     }
 }

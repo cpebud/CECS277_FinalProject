@@ -11,6 +11,9 @@
  ******************************************************************************/
 package main;
 
+import main.amenities.Shower;
+import main.rooms.MotelRoom;
+
 /**
  * <tt> RoachColony </tt>
  *
@@ -22,6 +25,7 @@ public class RoachColony
     private String name;
     private int population;
     private double growthRate;
+    private MotelRoom room;
     
     /**
      * Instantiates a new roach colony.
@@ -43,6 +47,19 @@ public class RoachColony
         this.name = name;
         this.population = initPopulation;
         this.growthRate = growthRate;
+    }
+    
+    public void party()
+    {
+        population *= growthRate;
+        if(room instanceof Shower)
+        {
+            population += 0.25;
+        }
+        else
+        {
+            population *= 0.50;
+        }
     }
     
     /**
@@ -73,6 +90,26 @@ public class RoachColony
     public double getGrowthRate()
     {
         return growthRate;
+    }
+
+    /**
+     * Gets the room.
+     *
+     * @return the room
+     */
+    public MotelRoom getRoom()
+    {
+        return room;
+    }
+
+    /**
+     * Sets the room.
+     *
+     * @param room the room to set
+     */
+    public void setRoom(MotelRoom room)
+    {
+        this.room = room;
     }
 
     /* (non-Javadoc)
