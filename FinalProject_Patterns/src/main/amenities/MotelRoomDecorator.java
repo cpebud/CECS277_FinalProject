@@ -21,7 +21,6 @@ import main.rooms.MotelRoom;
  */
 public abstract class MotelRoomDecorator extends MotelRoom
 {
-    
     /* (non-Javadoc)
      * @see main.MotelRoom#getDescription()
      */
