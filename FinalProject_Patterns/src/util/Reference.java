@@ -25,8 +25,8 @@ public class Reference
     public static final int ROOM_PRICE_DELUXE  = 75;
     public static final int ROOM_PRICE_SUITE   = 100;
     
-    public static final int AMENITY_PRICE_FOODBAR         = 10;
-    public static final int AMENITY_PRICE_SPA             = 20;
-    public static final int AMENITY_PRICE_AUTOREFILL      = 5;
-    public static final int AMENITY_PRICE_SHOWER = 25;
+    public static final int AMENITY_PRICE_FOODBAR    = 10;
+    public static final int AMENITY_PRICE_SPA        = 20;
+    public static final int AMENITY_PRICE_AUTOREFILL = 5;
+    public static final int AMENITY_PRICE_SHOWER     = 25;
 }
