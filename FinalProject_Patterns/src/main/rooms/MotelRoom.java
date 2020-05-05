@@ -54,6 +54,6 @@ public abstract class MotelRoom
      */
     public String toString()
     {
-        return String.format("%s %s", this.getClass().getSimpleName().toUpperCase(), this.getDescription());
+        return String.format("%s %s", "MOTELROOM", this.getDescription());
     }
 }
