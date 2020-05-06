@@ -2,12 +2,11 @@
  * File Name:		RegularRoom.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			Represents a regular roach room
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represents a regular roach motel room.
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main.rooms;
 

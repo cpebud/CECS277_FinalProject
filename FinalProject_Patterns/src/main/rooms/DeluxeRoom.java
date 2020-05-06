@@ -2,12 +2,11 @@
  * File Name:		DeluxeRoom.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			Represents a deluxe roach room
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represents a deluxe roach motel room.
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main.rooms;
 

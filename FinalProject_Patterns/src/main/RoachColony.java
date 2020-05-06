@@ -2,12 +2,11 @@
  * File Name:		RoachColony.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			Represents a roach colony
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represents a roach colony.
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main;
 

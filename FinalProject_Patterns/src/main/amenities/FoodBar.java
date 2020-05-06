@@ -2,12 +2,11 @@
  * File Name:		FoodBar.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represent an amentity for motel room. Adds a food bar.
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main.amenities;
 

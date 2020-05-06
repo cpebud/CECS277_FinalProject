@@ -2,12 +2,11 @@
  * File Name:		SuiteRoom.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			Represents a roach suite
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represents a roach motel suite.
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main.rooms;
 
