@@ -2,12 +2,12 @@
  * File Name:		AutoRefill.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represents an amentity for motel room. Auto-refill for 
+ *                  food bar amentity.
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main.amenities;
 

@@ -2,12 +2,12 @@
  * File Name:		ResistantShower.java	
  * Project:			FinalProject_Patterns
  * Designer(s):		Garrett Cross
+ *                  Chinemerem Anunkor
  * 
- * Purpose:			
- * Inputs:			
- * Outputs:			
+ * Purpose:			Represents an amentity for motel room. Adds a 
+ *                  spray-resistant shower.		
  * 
- * Copyright © 2020 Garrett Cross. All rights reserved.
+ * Copyright © 2020 Garrett Cross & Chinemerem Anunkor. All rights reserved.
  ******************************************************************************/
 package main.amenities;
 
