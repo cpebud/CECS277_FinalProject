@@ -48,6 +48,9 @@ public class RoachColony
         this.growthRate = growthRate;
     }
     
+    /**
+     * Throws a party.
+     */
     public void party()
     {
         population *= growthRate;

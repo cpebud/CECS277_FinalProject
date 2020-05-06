@@ -25,7 +25,7 @@ public class FoodBar extends MotelRoomDecorator
     protected MotelRoom room;
     
     /**
-     * Instantiates a new food bar.
+     * Adds amenity to given room.
      *
      * @param room the room
      */

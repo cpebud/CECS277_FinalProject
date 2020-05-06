@@ -48,7 +48,7 @@ public class MotelRoomFactory
         else
         {
             // throw exception?
-            return null;
+            return room;
         }
         
         for(String amenity : amenities)
