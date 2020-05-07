@@ -19,8 +19,8 @@ package main.payments;
 public class MasterRoach implements Payment
 {
     private String name;
-    private int cardNumber;
-    private int CVV;
+    private String cardNumber;
+    private String CVV;
     private String DOE;
     
     /**
@@ -31,7 +31,7 @@ public class MasterRoach implements Payment
      * @param CVV the security code
      * @param DOE the date of expiration
      */
-    public MasterRoach(String name, int cardNumber, int CVV, String DOE)
+    public MasterRoach(String name, String cardNumber, String CVV, String DOE)
     {
         this.name = name;
         this.cardNumber = cardNumber;
@@ -54,7 +54,7 @@ public class MasterRoach implements Payment
      *
      * @return the cardNumber
      */
-    public int getCardNumber()
+    public String getCardNumber()
     {
         return cardNumber;
     }
@@ -64,7 +64,7 @@ public class MasterRoach implements Payment
      *
      * @return the CVV
      */
-    public int getCVV()
+    public String getCVV()
     {
         return CVV;
     }
@@ -93,6 +93,6 @@ public class MasterRoach implements Payment
      */
     public String toString()
     {
-        return String.format("%s %s %d %d %s", this.getClass().getSimpleName().toUpperCase(), name, cardNumber, CVV, DOE);
+        return String.format("%s %s %s %s %s", this.getClass().getSimpleName().toUpperCase(), name, cardNumber, CVV, DOE);
     }
 }

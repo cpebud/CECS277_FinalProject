@@ -11,6 +11,7 @@
  ******************************************************************************/
 package main.amenities;
 
+import main.RoachColony;
 import main.rooms.MotelRoom;
 import util.Reference;
 
@@ -23,7 +24,6 @@ import util.Reference;
 public class Shower extends MotelRoomDecorator
 {
     private static final int PRICE = Reference.AMENITY_PRICE_SHOWER;
-    protected MotelRoom room;
     
     /**
      * Adds amenity to given room.
@@ -33,6 +33,14 @@ public class Shower extends MotelRoomDecorator
     public Shower(MotelRoom room)
     {
         this.room = room;
+    }
+    
+    @Override
+    public void party(RoachColony colony)
+    {
+        colony.spray(0.75);
+        System.out.println("Management sprays the room with pesticide.");
+        System.out.println("The shower helps protect the colony from the spray.");
     }
     
     /* (non-Javadoc)

@@ -48,15 +48,15 @@ public class RoachMotel
     {
         if(currentCapacity > 0)
         {
-            for(MotelRoom room : rooms) 
+            for(int i = 0; i < MAX_ROOMS; i++) 
             {
-                if(room == null)
+                if(rooms[i] == null)
                 {
-                    room = factory.createRoom(roomType, amenities);
-                    colony.setRoom(room);
+                    rooms[i] = factory.createRoom(roomType, amenities);
+                    colony.setRoom(rooms[i]);
                     currentCapacity--;
                     System.out.println(colony.getName() + " has checked in.");
-                    return room;
+                    return rooms[i];
                 }
             }
         }
@@ -76,12 +76,12 @@ public class RoachMotel
     {
         double cost = room.costTotal(numDays);
         
-        for(MotelRoom m_room : rooms)
+        for(int i = 0; i < MAX_ROOMS; i++)
         {
-            if(m_room.equals(room))
+            if(rooms[i].equals(room))
             {
                 payment.pay(cost);
-                m_room = null;
+                rooms[i] = null;
                 currentCapacity++;
                 return cost;
             }
