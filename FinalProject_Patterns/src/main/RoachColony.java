@@ -49,19 +49,23 @@ public class RoachColony
     }
     
     /**
-     * Throws a party.
+     * Increases population by growth rate and throws a party in room
      */
     public void party()
     {
+        System.out.println("PARTY!");
         population *= growthRate;
-        if(room instanceof Shower)
-        {
-            population += 0.25;
-        }
-        else
-        {
-            population *= 0.50;
-        }
+        room.party(this);
+    }
+    
+    /**
+     * Decreases population by given death rate
+     *
+     * @param deathRate the death rate
+     */
+    public void spray(double deathRate)
+    {
+        population *= deathRate;
     }
     
     /**

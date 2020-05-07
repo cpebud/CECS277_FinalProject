@@ -22,7 +22,6 @@ import util.Reference;
 public class Spa extends MotelRoomDecorator
 {
     private static final int PRICE = Reference.AMENITY_PRICE_SPA;
-    protected MotelRoom room;
 
     /**
      * Adds amenity to given room.

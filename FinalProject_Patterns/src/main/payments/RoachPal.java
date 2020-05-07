@@ -59,7 +59,7 @@ public class RoachPal implements Payment
     @Override
     public void pay(double amount)
     {
-        System.out.println("$" + amount + "Paid with RoachPal.");
+        System.out.println("$" + amount + " Paid with RoachPal.");
     }
     
     /* (non-Javadoc)

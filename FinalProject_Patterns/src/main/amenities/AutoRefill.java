@@ -23,7 +23,6 @@ import util.Reference;
 public class AutoRefill extends MotelRoomDecorator
 {   
     private static final int PRICE = Reference.AMENITY_PRICE_AUTOREFILL;
-    protected MotelRoom room;
     
     /**
      * Adds amenity to given room.

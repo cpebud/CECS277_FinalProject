@@ -19,7 +19,7 @@ package util;
  */
 public class Reference
 {
-    public static final int MOTEL_MAXROOMS = 10;
+    public static final int MOTEL_MAXROOMS = 3;
     
     public static final int ROOM_PRICE_REGULAR = 50;
     public static final int ROOM_PRICE_DELUXE  = 75;

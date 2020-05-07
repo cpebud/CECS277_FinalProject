@@ -11,6 +11,7 @@
  ******************************************************************************/
 package main.amenities;
 
+import main.RoachColony;
 import main.rooms.MotelRoom;
 
 /**
@@ -21,8 +22,22 @@ import main.rooms.MotelRoom;
  */
 public abstract class MotelRoomDecorator extends MotelRoom
 {
+    protected MotelRoom room;
+    
     /* (non-Javadoc)
      * @see main.MotelRoom#getDescription()
      */
     public abstract String getDescription();
+    
+    /* (non-Javadoc)
+     * @see main.rooms.MotelRoom#party(main.RoachColony)
+     */
+    @Override
+    public void party(RoachColony colony)
+    {
+        if(room != null)
+        {
+            room.party(colony);
+        }
+    }
 }

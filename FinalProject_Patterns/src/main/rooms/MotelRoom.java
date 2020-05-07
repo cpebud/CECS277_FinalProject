@@ -12,6 +12,8 @@
  ******************************************************************************/
 package main.rooms;
 
+import main.RoachColony;
+
 /**
  * <tt> MotelRoom </tt>
  *
@@ -21,16 +23,6 @@ package main.rooms;
 public abstract class MotelRoom
 {
     protected String description;
-    
-    /**
-     * Gets the description.
-     *
-     * @return the description
-     */
-    public String getDescription()
-    {
-        return description;
-    }
     
     /**
      * Daily cost.
@@ -48,6 +40,22 @@ public abstract class MotelRoom
     public int costTotal(int numDays)
     {
         return costDaily() * numDays;
+    }
+    
+    public void party(RoachColony colony)
+    {
+        colony.spray(0.5);
+        System.out.println("Management sprays the room with pesticide.");
+    }
+    
+    /**
+     * Gets the description.
+     *
+     * @return the description
+     */
+    public String getDescription()
+    {
+        return description;
     }
     
     /* (non-Javadoc)
