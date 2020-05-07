@@ -10,7 +10,6 @@
  ******************************************************************************/
 package main;
 
-import main.amenities.Shower;
 import main.rooms.MotelRoom;
 
 /**
@@ -55,17 +54,16 @@ public class RoachColony
     {
         System.out.println("PARTY!");
         population *= growthRate;
-        room.party(this);
-    }
-    
-    /**
-     * Decreases population by given death rate
-     *
-     * @param deathRate the death rate
-     */
-    public void spray(double deathRate)
-    {
-        population *= deathRate;
+        System.out.println("Management sprays the room with pesticide.");
+        if(room.getDescription().contains("shower"))
+        {
+            System.out.println("The shower helps protect the colony from the spray.");
+            population *= 0.75;
+        }
+        else
+        {
+            population *= 0.5;
+        }
     }
     
     /**
