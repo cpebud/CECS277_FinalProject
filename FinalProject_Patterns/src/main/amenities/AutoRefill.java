@@ -26,7 +26,7 @@ public class AutoRefill extends MotelRoomDecorator
     protected MotelRoom room;
     
     /**
-     * Instantiates a new auto refill.
+     * Adds amenity to given room.
      *
      * @param room the room
      */

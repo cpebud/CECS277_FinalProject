@@ -25,7 +25,7 @@ public class Spa extends MotelRoomDecorator
     protected MotelRoom room;
 
     /**
-     * Instantiates a new spa.
+     * Adds amenity to given room.
      *
      * @param room the room
      */

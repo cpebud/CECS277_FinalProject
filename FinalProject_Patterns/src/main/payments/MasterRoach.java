@@ -28,8 +28,8 @@ public class MasterRoach implements Payment
      *
      * @param name the name
      * @param cardNumber the card number
-     * @param CVV the cvv
-     * @param DOE the doe
+     * @param CVV the security code
+     * @param DOE the date of expiration
      */
     public MasterRoach(String name, int cardNumber, int CVV, String DOE)
     {

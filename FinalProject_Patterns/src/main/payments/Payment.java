@@ -20,7 +20,7 @@ package main.payments;
 public interface Payment
 {   
     /**
-     * Pay.
+     * Pays the given amount.
      *
      * @param amount the amount
      */
