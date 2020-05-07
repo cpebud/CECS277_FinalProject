@@ -52,7 +52,7 @@ public class RoachMotelTest
         RoachColony rc2 = new RoachColony("Mr Roach", 200, 1.2);
         java.util.HashSet<String> am2 = new java.util.HashSet<>();
         am2.add("spa");
-        //am2.add("shower");
+        am2.add("shower");
         MotelRoom room3 = motel.checkIn(rc2, "regular", am2);
         System.out.println(rc2);
         System.out.println(room3);

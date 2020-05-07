@@ -12,8 +12,6 @@
  ******************************************************************************/
 package main.rooms;
 
-import main.RoachColony;
-
 /**
  * <tt> MotelRoom </tt>
  *
@@ -41,13 +39,7 @@ public abstract class MotelRoom
     {
         return costDaily() * numDays;
     }
-    
-    public void party(RoachColony colony)
-    {
-        colony.spray(0.5);
-        System.out.println("Management sprays the room with pesticide.");
-    }
-    
+
     /**
      * Gets the description.
      *
